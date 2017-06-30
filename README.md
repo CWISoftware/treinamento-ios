@@ -3,7 +3,7 @@ Exemplos de código do Treinamento iOS
 
 ## Links Úteis
 
-https://git.io/vHIoV
+https://gist.github.com/jnardon/5e919a3bc30032e28dab5e324cd1d97a
 
 ## Exercícios
 
