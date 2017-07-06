@@ -96,10 +96,13 @@
                             <constraint firstItem="J4a-m6-khK" firstAttribute="top" secondItem="ht8-7x-l0J" secondAttribute="bottom" constant="8" id="iLZ-xM-12W"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="J4a-m6-khK" id="l2s-Tv-gRW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="-119" y="138"/>
         </scene>
     </scenes>
 </document>

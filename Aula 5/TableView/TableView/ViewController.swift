@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet weak var tableView: UITableView!
     
     var states = [[String]]()
     
@@ -19,6 +20,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.states.append(self.sp)
         self.states.append(self.rj)
         self.states.append(self.rs)
+        
     }
     
     let sp = [
@@ -71,7 +73,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         cell.config(stateText: element)
         
-        tableView.reloadData()
         
         return cell
     }
@@ -97,15 +98,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     // MARK: DELEGATE METHODS
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let element = tableView.cellForRow(at: indexPath) as! RegularUITableViewCell
+        let element = self.states[indexPath.section][indexPath.item]
         
-        print("selecionou \(String(describing: element.cityLabel.text!))")
+        print("selecionou \(element)")
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        let element = tableView.cellForRow(at: indexPath) as! RegularUITableViewCell
+        let element = self.states[indexPath.section][indexPath.item]
         
-        print("deselecionou \(String(describing: element.cityLabel.text!))")
+        print("deselecionou \(element)")
     }
 }
 
