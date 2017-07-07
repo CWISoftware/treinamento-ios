@@ -15,4 +15,6 @@ class HeaderUITableViewCell : UITableViewCell {
     func config(stateText: String) {
         self.stateLabel.text = stateText
     }
+    
+    
 }

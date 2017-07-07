@@ -73,7 +73,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         cell.config(stateText: element)
         
-        
         return cell
     }
     
