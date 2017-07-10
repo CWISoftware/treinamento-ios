@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SWAPI/Networfk.swift"
+            timestampString = "521228319.387006"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "load(url:method:parameters:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static SWAPI.Network.load (url : Swift.String, method : Alamofire.HTTPMethod, parameters : Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, completion : (Swift.Dictionary&lt;Swift.String, Any&gt;, Swift.Int) -&gt; ()) -&gt; ()"
+                  moduleName = "SWAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Documents/developer/SWAPI/SWAPI/Networfk.swift"
+                  timestampString = "521228319.710798"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "95">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static SWAPI.Network.(load (url : Swift.String, method : Alamofire.HTTPMethod, parameters : Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, completion : (Swift.Dictionary&lt;Swift.String, Any&gt;, Swift.Int) -&gt; ()) -&gt; ()).(default argument 1)"
+                  moduleName = "SWAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Documents/developer/SWAPI/SWAPI/Networfk.swift"
+                  timestampString = "521228319.714337"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "6">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static SWAPI.Network.(load (url : Swift.String, method : Alamofire.HTTPMethod, parameters : Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, completion : (Swift.Dictionary&lt;Swift.String, Any&gt;, Swift.Int) -&gt; ()) -&gt; ()).(default argument 2)"
+                  moduleName = "SWAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Documents/developer/SWAPI/SWAPI/Networfk.swift"
+                  timestampString = "521228319.717166"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SWAPI/Networfk.swift"
+            timestampString = "521228320.347188"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "load(url:method:parameters:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static SWAPI.Network.load (url : Swift.String, method : Alamofire.HTTPMethod, parameters : Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, completion : (Swift.Dictionary&lt;Swift.String, Any&gt;, Swift.Int) -&gt; ()) -&gt; ()"
+                  moduleName = "SWAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Documents/developer/SWAPI/SWAPI/Networfk.swift"
+                  timestampString = "521228320.458638"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "95">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static SWAPI.Network.(load (url : Swift.String, method : Alamofire.HTTPMethod, parameters : Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, completion : (Swift.Dictionary&lt;Swift.String, Any&gt;, Swift.Int) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "SWAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Documents/developer/SWAPI/SWAPI/Networfk.swift"
+                  timestampString = "521228320.460747"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "23">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SWAPI/Networfk.swift"
+            timestampString = "521228323.13906"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "load(url:method:parameters:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static SWAPI.Network.load (url : Swift.String, method : Alamofire.HTTPMethod, parameters : Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, completion : (Swift.Dictionary&lt;Swift.String, Any&gt;, Swift.Int) -&gt; ()) -&gt; ()"
+                  moduleName = "SWAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Documents/developer/SWAPI/SWAPI/Networfk.swift"
+                  timestampString = "521379656.707537"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "95">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static SWAPI.Network.(load (url : Swift.String, method : Alamofire.HTTPMethod, parameters : Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, completion : (Swift.Dictionary&lt;Swift.String, Any&gt;, Swift.Int) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "SWAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Documents/developer/SWAPI/SWAPI/Networfk.swift"
+                  timestampString = "521379656.710562"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "23">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SWAPI/SearchViewController.swift"
+            timestampString = "521384877.550152"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SWAPI/SearchViewController.swift"
+            timestampString = "521384877.550152"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "numberOfSections(in:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SWAPI/SearchViewController.swift"
+            timestampString = "521384877.550152"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SWAPI/SearchViewController.swift"
+            timestampString = "521384877.550152"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SWAPI/People.swift"
+            timestampString = "521387942.765948"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "People"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SWAPI/People.swift"
+            timestampString = "521387942.765948"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "init(json:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SWAPI/PeopleDetailController.swift"
+            timestampString = "521390362.702091"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SWAPI.PeopleDetailController.back (__ObjC.UIButton) -&gt; ()"
+                  moduleName = "SWAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Documents/developer/SWAPI/SWAPI/PeopleDetailController.swift"
+                  timestampString = "521390154.315159"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "19">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SWAPI.PeopleDetailController.back (__ObjC.UIButton) -&gt; ()"
+                  moduleName = "SWAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Documents/developer/SWAPI/SWAPI/PeopleDetailController.swift"
+                  timestampString = "521390154.317301"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "447">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SWAPI/PeopleDetailController.swift"
+            timestampString = "521390387.375294"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SWAPI/PeopleDetailController.swift"
+            timestampString = "521390548.432285"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SWAPI.PeopleDetailController.viewDidLoad () -&gt; ()"
+                  moduleName = "SWAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Documents/developer/SWAPI/SWAPI/PeopleDetailController.swift"
+                  timestampString = "521390949.349367"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "75">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SWAPI.PeopleDetailController.(viewDidLoad () -&gt; ()).(closure #1)"
+                  moduleName = "SWAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Documents/developer/SWAPI/SWAPI/PeopleDetailController.swift"
+                  timestampString = "521390949.351258"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "66">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
