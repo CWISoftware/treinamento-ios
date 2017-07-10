@@ -1,0 +1,6 @@
+framework module Pods_Aula6 {
+  umbrella header "Pods-Aula6-umbrella.h"
+
+  export *
+  module * { export * }
+}
