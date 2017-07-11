@@ -20,12 +20,13 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var mostViewedTable: UITableView!
     @IBOutlet weak var loaderActivityIndicator: UIActivityIndicatorView!
     
+    @IBOutlet weak var noResults: UIImageView!
     @IBAction func goBack(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func searchData(_ sender: UITextField) {
-        showSearchResults = true
+        self.showSearchResults = true
         switch self.searchScreenType {
         case Data.SCREEN_OPTIONS.Films.rawValue:
             Film.getFilmsByName(sender.text!) { (films, error) in
@@ -116,7 +117,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let cell = tableView.dequeueReusableCell(withIdentifier: "header-cell") as! HeaderUITableViewCell
         
-        let element = "Most accessed " + searchScreenType
+        let element = "Results for " + searchScreenType
         
         cell.config(resultText: element)
         
@@ -128,19 +129,27 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        var total = 0
         switch self.searchScreenType {
         case Data.SCREEN_OPTIONS.Films.rawValue:
-            return self.films.count
+            total = self.films.count
         case Data.SCREEN_OPTIONS.People.rawValue:
-            return self.people.count
+            total = self.people.count
         case Data.SCREEN_OPTIONS.Planets.rawValue:
-            return self.planets.count
+            total = self.planets.count
         case Data.SCREEN_OPTIONS.Starships.rawValue:
-            return self.starships.count
+            total = self.starships.count
         default:
             break
         }
-        return 0
+        if total == 0 && self.showSearchResults {
+            tableView.isHidden = true
+            self.noResults.isHidden = false
+        } else {
+            tableView.isHidden = false
+            self.noResults.isHidden = true
+        }
+        return total
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -209,10 +218,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        
-        let element = "teste"
-        
-        print("deselecionou \(element)")
+        //nada por enquanto
     }
     
     

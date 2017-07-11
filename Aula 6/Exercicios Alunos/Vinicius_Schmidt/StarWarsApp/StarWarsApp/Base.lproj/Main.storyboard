@@ -368,6 +368,9 @@
                                     <outlet property="delegate" destination="vtm-TY-NUW" id="F1x-f9-h86"/>
                                 </connections>
                             </tableView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prohibited" translatesAutoresizingMaskIntoConstraints="NO" id="b0Z-kK-pvh">
+                                <rect key="frame" x="123" y="269" width="128" height="128"/>
+                            </imageView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="UHL-Rz-2as">
                                 <rect key="frame" x="177" y="323" width="20" height="20"/>
                             </activityIndicatorView>
@@ -377,7 +380,9 @@
                             <constraint firstItem="UHL-Rz-2as" firstAttribute="centerY" secondItem="Lcz-e0-Rf8" secondAttribute="centerY" id="4yg-7b-qSI"/>
                             <constraint firstItem="Yjb-PR-IoV" firstAttribute="top" secondItem="Lcz-e0-Rf8" secondAttribute="top" id="5Ks-7r-dI4"/>
                             <constraint firstItem="Lkm-oi-mge" firstAttribute="leading" secondItem="Lcz-e0-Rf8" secondAttribute="leading" id="7nO-yc-W8l"/>
+                            <constraint firstItem="b0Z-kK-pvh" firstAttribute="top" secondItem="Yjb-PR-IoV" secondAttribute="bottom" constant="161" id="MDl-eM-JBf"/>
                             <constraint firstAttribute="trailing" secondItem="Yjb-PR-IoV" secondAttribute="trailing" id="T2w-K2-TrY"/>
+                            <constraint firstItem="b0Z-kK-pvh" firstAttribute="centerX" secondItem="Lcz-e0-Rf8" secondAttribute="centerX" id="UbN-ng-CkU"/>
                             <constraint firstItem="UHL-Rz-2as" firstAttribute="centerX" secondItem="Lcz-e0-Rf8" secondAttribute="centerX" id="VH0-6o-gz3"/>
                             <constraint firstAttribute="trailing" secondItem="Lkm-oi-mge" secondAttribute="trailing" id="XdC-y8-huE"/>
                             <constraint firstItem="Lkm-oi-mge" firstAttribute="top" secondItem="Yjb-PR-IoV" secondAttribute="bottom" id="d5X-Kz-Cvs"/>
@@ -388,6 +393,7 @@
                     <connections>
                         <outlet property="loaderActivityIndicator" destination="UHL-Rz-2as" id="3XH-EK-Nbz"/>
                         <outlet property="mostViewedTable" destination="Lkm-oi-mge" id="cGG-8o-odR"/>
+                        <outlet property="noResults" destination="b0Z-kK-pvh" id="5GF-ly-l54"/>
                         <outlet property="searchTitleLabel" destination="3AN-Nf-3TD" id="RTH-8j-hzn"/>
                         <segue destination="dsg-7u-Mho" kind="show" identifier="" id="kxv-7a-mFn"/>
                     </connections>
@@ -733,6 +739,7 @@
         <image name="left-arrow" width="24" height="20"/>
         <image name="man-user" width="32" height="40"/>
         <image name="movie-symbol-of-video-camera" width="32" height="28"/>
+        <image name="prohibited" width="128" height="128"/>
         <image name="starship" width="32" height="32"/>
     </resources>
 </document>
