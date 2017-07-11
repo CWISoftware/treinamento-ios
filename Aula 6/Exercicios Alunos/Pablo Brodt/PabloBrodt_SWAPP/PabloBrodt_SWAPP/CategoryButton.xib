@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoryButton" customModule="PabloBrodt_SWAPP" customModuleProvider="target">
+            <connections>
+                <outlet property="actionBtn" destination="E8z-SL-tQC" id="wIR-Qf-EC8"/>
+                <outlet property="icon" destination="KGY-xI-7vf" id="ULS-Dw-xun"/>
+                <outlet property="titleLabel" destination="RjW-EW-x8T" id="v6o-Zj-MRB"/>
+                <outlet property="view" destination="iN0-l3-epB" id="wPq-dr-spg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KGY-xI-7vf" userLabel="icon">
+                    <rect key="frame" x="16" y="44" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="E4i-Yn-wOd"/>
+                        <constraint firstAttribute="width" constant="32" id="g7M-u6-SNN"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Default Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RjW-EW-x8T">
+                    <rect key="frame" x="79" y="49.5" width="101" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8z-SL-tQC" userLabel="actionBtn">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="E8z-SL-tQC" secondAttribute="trailing" id="9bg-vl-D82"/>
+                <constraint firstItem="E8z-SL-tQC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="BSM-fX-YnZ"/>
+                <constraint firstAttribute="bottom" secondItem="E8z-SL-tQC" secondAttribute="bottom" id="VZr-hz-IVI"/>
+                <constraint firstItem="KGY-xI-7vf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="apK-au-mV7"/>
+                <constraint firstItem="RjW-EW-x8T" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="eKH-OH-74e"/>
+                <constraint firstItem="RjW-EW-x8T" firstAttribute="leading" secondItem="KGY-xI-7vf" secondAttribute="trailing" constant="31" id="phc-z3-mF9"/>
+                <constraint firstItem="KGY-xI-7vf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="qDI-fK-hnk"/>
+                <constraint firstItem="E8z-SL-tQC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vnx-dJ-dNv"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="13" y="-27"/>
+        </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TUR-fN-9bX">
+            <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" title="Button"/>
+        </button>
+    </objects>
+</document>
