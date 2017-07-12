@@ -21,6 +21,13 @@ struct Film {
         self.director = json["director"] as! String
     }
     
+    init() {
+        self.title = ""
+        self.episode = 0
+        self.year = ""
+        self.director = ""
+    }
+    
     static func getFilm(_ id: Int, completion: @escaping (_ film: Film?, _ error: Int) -> Void) {
         Network.load(url: "films/\(id)") { (json, error) in
             if error == 0 {

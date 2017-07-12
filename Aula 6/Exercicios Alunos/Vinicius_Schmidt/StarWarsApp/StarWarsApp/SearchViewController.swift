@@ -18,6 +18,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     var showSearchResults = false
     
     @IBOutlet weak var mostViewedTable: UITableView!
+    @IBOutlet weak var searchTitleLabel: UILabel!
     @IBOutlet weak var loaderActivityIndicator: UIActivityIndicatorView!
     
     @IBOutlet weak var noResults: UIImageView!
@@ -27,9 +28,10 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     
     @IBAction func searchData(_ sender: UITextField) {
         self.showSearchResults = true
+        let search = sender.text!.replacingOccurrences(of: " ", with: "%20")
         switch self.searchScreenType {
         case Data.SCREEN_OPTIONS.Films.rawValue:
-            Film.getFilmsByName(sender.text!) { (films, error) in
+            Film.getFilmsByName(search) { (films, error) in
                 if let response = films {
                     if error == 0 {
                         self.films = response
@@ -42,20 +44,24 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
             
             break
         case Data.SCREEN_OPTIONS.People.rawValue:
-            Person.getPeopleByName(sender.text!) { (people, error) in
+            Person.getPeopleByName(search) { (people, error) in
                 if let response = people {
                     if error == 0 {
                         self.people = response
-                        self.mostViewedTable.reloadData()
+                    } else {
+                        print("Error \(error)")
+                        //self.people = Person.getByName(sender.text!)
                     }
                 } else {
                     print("Sem Internet")
+                    //self.people = Person.getByName(sender.text!)
                 }
+                self.mostViewedTable.reloadData()
             }
             
             break
         case Data.SCREEN_OPTIONS.Planets.rawValue:
-            Planet.getPlanetsByName(sender.text!) { (planets, error) in
+            Planet.getPlanetsByName(search) { (planets, error) in
                 if let response = planets {
                     if error == 0 {
                         self.planets = response
@@ -67,7 +73,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
             }
             break
         case Data.SCREEN_OPTIONS.Starships.rawValue:
-            Starship.getStarshipsByName(sender.text!) { (starships, error) in
+            Starship.getStarshipsByName(search) { (starships, error) in
                 if let response = starships {
                     if error == 0 {
                         self.starships = response
@@ -90,8 +96,6 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         }
     }
     
-    @IBOutlet weak var searchTitleLabel: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -102,12 +106,14 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         getData()
         self.loaderActivityIndicator.stopAnimating()
         
+        
+        
     }
     
     
     // MARK: DATA SOURCE METHODS
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 60
+        return 40
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -243,11 +249,17 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
                 if let response = people {
                     if error == 0 {
                         self.people = response
-                        self.mostViewedTable.reloadData()
+                        /*
+                        for person in self.people {
+                            Person.createOrUpdate(person)
+                        }
+                        */
                     }
                 } else {
                     print("Sem Internet")
+                    //self.people = Person.getAll()
                 }
+                self.mostViewedTable.reloadData()
             }
             break
         case Data.SCREEN_OPTIONS.Planets.rawValue:
