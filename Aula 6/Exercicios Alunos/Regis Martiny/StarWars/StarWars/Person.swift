@@ -23,6 +23,15 @@ class Person : Item {
         super.init(image: image, name: name, leftPropertyName: "HEIGHT", leftPropertyValue: self.height, centerPropertyName: "MASS", centerPropertyValue: self.mass, rightPropertyName: "HAIR COLOR", rightPropertyValue: self.hairColor)
     }
     
+    init(image: NSData?, name: String, height: String, mass: String, hairColor: String) {
+        self.height = height
+        self.mass = mass
+        self.hairColor = hairColor
+        
+        super.init(image: "", name: name, leftPropertyName: "HEIGHT", leftPropertyValue: self.height, centerPropertyName: "MASS", centerPropertyValue: self.mass, rightPropertyName: "HAIR COLOR", rightPropertyValue: self.hairColor)
+
+    }
+    
     static func getPerson(_ id: Int, completion: @escaping (_ person: Person?, _ error: Int) -> Void) {
         Network.load(url: "people/\(id)") { (json, error) in
             if error == 0 {

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6FFECE4FD842E82CF3E9F957 /* Pods_StarWars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C89F65282CB796F8A4D9A76 /* Pods_StarWars.framework */; };
+		F4048E8A1F150C8E00C06F44 /* PersonLocal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4048E881F150C8D00C06F44 /* PersonLocal+CoreDataClass.swift */; };
+		F4048E8B1F150C8E00C06F44 /* PersonLocal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4048E891F150C8D00C06F44 /* PersonLocal+CoreDataProperties.swift */; };
+		F413E8FB1F14FC99000C8245 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F413E8F91F14FC99000C8245 /* Model.xcdatamodeld */; };
+		F413E9111F1503C1000C8245 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F413E9101F1503C1000C8245 /* DataManager.swift */; };
 		F43FBA201F13A29500ABECA5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43FBA1F1F13A29500ABECA5 /* Item.swift */; };
 		F43FBA221F13A87C00ABECA5 /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43FBA211F13A87C00ABECA5 /* Starship.swift */; };
 		F43FBA241F13A93D00ABECA5 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43FBA231F13A93D00ABECA5 /* Film.swift */; };
@@ -32,6 +36,10 @@
 		3C89F65282CB796F8A4D9A76 /* Pods_StarWars.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarWars.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7EAA2F8AFCE6D15BEB6A711 /* Pods-StarWars.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWars.release.xcconfig"; path = "Pods/Target Support Files/Pods-StarWars/Pods-StarWars.release.xcconfig"; sourceTree = "<group>"; };
 		D36106FE8A180FF3F75BA309 /* Pods-StarWars.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWars.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StarWars/Pods-StarWars.debug.xcconfig"; sourceTree = "<group>"; };
+		F4048E881F150C8D00C06F44 /* PersonLocal+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PersonLocal+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F4048E891F150C8D00C06F44 /* PersonLocal+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PersonLocal+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F413E8FA1F14FC99000C8245 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		F413E9101F1503C1000C8245 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		F43FBA1F1F13A29500ABECA5 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		F43FBA211F13A87C00ABECA5 /* Starship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Starship.swift; sourceTree = "<group>"; };
 		F43FBA231F13A93D00ABECA5 /* Film.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
@@ -83,6 +91,46 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F413E8FC1F14FCAF000C8245 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F4443D401F1125850033A398 /* HomeViewController.swift */,
+				F4443D521F1141010033A398 /* SearchViewController.swift */,
+				F4686F3F1F11458300B06251 /* DetailViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F413E8FD1F14FCC5000C8245 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F4443D3E1F1125850033A398 /* AppDelegate.swift */,
+				F4443D451F1125850033A398 /* Assets.xcassets */,
+				F4443D4A1F1125850033A398 /* Info.plist */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F413E8FE1F14FCCD000C8245 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F4048E881F150C8D00C06F44 /* PersonLocal+CoreDataClass.swift */,
+				F4048E891F150C8D00C06F44 /* PersonLocal+CoreDataProperties.swift */,
+				F413E8F91F14FC99000C8245 /* Model.xcdatamodeld */,
+				F413E9101F1503C1000C8245 /* DataManager.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		F413E8FF1F14FCE2000C8245 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F4443D421F1125850033A398 /* Main.storyboard */,
+				F4443D471F1125850033A398 /* LaunchScreen.storyboard */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
 		F4443D321F1125850033A398 = {
 			isa = PBXGroup;
 			children = (
@@ -104,15 +152,11 @@
 		F4443D3D1F1125850033A398 /* StarWars */ = {
 			isa = PBXGroup;
 			children = (
-				F4443D3E1F1125850033A398 /* AppDelegate.swift */,
-				F4443D401F1125850033A398 /* HomeViewController.swift */,
-				F4443D421F1125850033A398 /* Main.storyboard */,
-				F4443D451F1125850033A398 /* Assets.xcassets */,
-				F4443D471F1125850033A398 /* LaunchScreen.storyboard */,
-				F4443D4A1F1125850033A398 /* Info.plist */,
+				F413E8FE1F14FCCD000C8245 /* Data */,
+				F413E8FD1F14FCC5000C8245 /* SupportingFiles */,
+				F413E8FC1F14FCAF000C8245 /* Controllers */,
+				F413E8FF1F14FCE2000C8245 /* Screens */,
 				F4443D501F112A160033A398 /* RoundShadowedView.swift */,
-				F4443D521F1141010033A398 /* SearchViewController.swift */,
-				F4686F3F1F11458300B06251 /* DetailViewController.swift */,
 				F4686F411F1149EE00B06251 /* TableCellRow.swift */,
 				F4686F431F115A8000B06251 /* Reachability.swift */,
 				F4686F451F115A9E00B06251 /* DataResponseExtension.swift */,
@@ -253,16 +297,20 @@
 				F4686F4A1F115B6000B06251 /* Person.swift in Sources */,
 				F43FBA201F13A29500ABECA5 /* Item.swift in Sources */,
 				F4686F441F115A8000B06251 /* Reachability.swift in Sources */,
+				F4048E8B1F150C8E00C06F44 /* PersonLocal+CoreDataProperties.swift in Sources */,
 				F43FBA241F13A93D00ABECA5 /* Film.swift in Sources */,
 				F43FBA221F13A87C00ABECA5 /* Starship.swift in Sources */,
 				F4443D411F1125850033A398 /* HomeViewController.swift in Sources */,
 				F4443D531F1141010033A398 /* SearchViewController.swift in Sources */,
 				F43FBA2E1F13CCFA00ABECA5 /* ItemTypes.swift in Sources */,
+				F4048E8A1F150C8E00C06F44 /* PersonLocal+CoreDataClass.swift in Sources */,
 				F4686F401F11458300B06251 /* DetailViewController.swift in Sources */,
 				F4686F461F115A9E00B06251 /* DataResponseExtension.swift in Sources */,
 				F4686F481F115AC400B06251 /* Network.swift in Sources */,
+				F413E8FB1F14FC99000C8245 /* Model.xcdatamodeld in Sources */,
 				F4686F421F1149EE00B06251 /* TableCellRow.swift in Sources */,
 				F43FBA261F13A94400ABECA5 /* Planet.swift in Sources */,
+				F413E9111F1503C1000C8245 /* DataManager.swift in Sources */,
 				F4443D511F112A160033A398 /* RoundShadowedView.swift in Sources */,
 				F4443D3F1F1125850033A398 /* AppDelegate.swift in Sources */,
 			);
@@ -433,6 +481,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F413E8F91F14FC99000C8245 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F413E8FA1F14FC99000C8245 /* Model.xcdatamodel */,
+			);
+			currentVersion = F413E8FA1F14FC99000C8245 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F4443D331F1125850033A398 /* Project object */;
 }

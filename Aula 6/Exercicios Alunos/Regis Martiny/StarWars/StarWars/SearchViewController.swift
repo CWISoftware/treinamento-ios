@@ -39,6 +39,8 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     
     
     func loadData() {
+        //DataManager.deleteAll()
+        if Reachability.isConnectedToNetwork() {
         switch self.type {
         case .People:
             Person.getAll() { (person, error) in
@@ -50,6 +52,10 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
                 } else {
                     print("Sem internet")
                 }
+                DataManager.saveOrUpdateAll(people: self.items as! [Person], completion: { (error) in
+                    print("People saved.")
+                    
+                })
                 self.doTableRefresh()
             }
         case .Starship:
@@ -87,6 +93,25 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
                     print("Sem internet")
                 }
                 self.doTableRefresh()
+            }
+        }
+        }
+        else {
+            switch self.type {
+            case .People:
+                let alertController = UIAlertController.init(title: "Sem internet", message: "Você não está conectado. Os dados podem estar desatualizados.",    preferredStyle: .alert)
+            
+                let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            
+                alertController.addAction(alertAction)
+            
+                self.navigationController?.present(alertController, animated: true, completion: nil)
+            
+                DataManager.getAll() { (people, error) in
+                    self.items = people
+                    self.doTableRefresh()
+                }
+            default: ""
             }
         }
         
@@ -158,7 +183,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.items.count < 6 ? self.items.count : 6 ///Exibir apenas 6 itens
+        return self.items.count
     }
 
     

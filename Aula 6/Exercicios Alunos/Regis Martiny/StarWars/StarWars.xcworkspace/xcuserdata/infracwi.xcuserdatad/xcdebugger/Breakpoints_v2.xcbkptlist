@@ -10,12 +10,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StarWars/SearchViewController.swift"
-            timestampString = "521395972.074331"
+            timestampString = "521552592.443185"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
+            landmarkName = "tableView(_:heightForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StarWars/SearchViewController.swift"
+            timestampString = "521552592.443185"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "191"
+            endingLineNumber = "191"
+            landmarkName = "numberOfSections(in:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StarWars/SearchViewController.swift"
+            timestampString = "521552592.443185"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "179"
             endingLineNumber = "179"
-            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkName = "doTableRefresh()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,12 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StarWars/SearchViewController.swift"
-            timestampString = "521395972.074331"
+            timestampString = "521552592.443185"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "175"
-            endingLineNumber = "175"
-            landmarkName = "tableView(_:cellForRowAt:)"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
+            landmarkName = "doTableRefresh()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,13 +74,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StarWars/SearchViewController.swift"
-            timestampString = "521395972.074331"
+            timestampString = "521552592.443185"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "163"
-            endingLineNumber = "163"
-            landmarkName = "SearchViewController"
-            landmarkType = "3">
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "loadData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StarWars.SearchViewController.loadData () -&gt; ()"
+                  moduleName = "StarWars"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/infracwi/Documents/Regis/git/treinamento-ios/aula6/Exercicio%20StarWars/StarWars/StarWars/SearchViewController.swift"
+                  timestampString = "521482866.178049"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "109"
+                  endingLineNumber = "109"
+                  offsetFromSymbolStart = "1836">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StarWars.SearchViewController.(loadData () -&gt; ()).(closure #5)"
+                  moduleName = "StarWars"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/infracwi/Documents/Regis/git/treinamento-ios/aula6/Exercicio%20StarWars/StarWars/StarWars/SearchViewController.swift"
+                  timestampString = "521482866.179623"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "110"
+                  endingLineNumber = "110"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -58,13 +122,93 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StarWars/SearchViewController.swift"
-            timestampString = "521395972.074331"
+            timestampString = "521483117.497616"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "loadData()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StarWars.SearchViewController.(loadData () -&gt; ()).(closure #1)"
+                  moduleName = "StarWars"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/infracwi/Documents/Regis/git/treinamento-ios/aula6/Exercicio%20StarWars/StarWars/StarWars/SearchViewController.swift"
+                  timestampString = "521483117.717625"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "518">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StarWars.SearchViewController.(loadData () -&gt; ()).(closure #1).(closure #1)"
+                  moduleName = "StarWars"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/infracwi/Documents/Regis/git/treinamento-ios/aula6/Exercicio%20StarWars/StarWars/StarWars/SearchViewController.swift"
+                  timestampString = "521483117.719671"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StarWars/SearchViewController.swift"
+            timestampString = "521483122.868463"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "loadData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StarWars.SearchViewController.(loadData () -&gt; ()).(closure #1)"
+                  moduleName = "StarWars"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/infracwi/Documents/Regis/git/treinamento-ios/aula6/Exercicio%20StarWars/StarWars/StarWars/SearchViewController.swift"
+                  timestampString = "521483122.872981"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "518">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StarWars.SearchViewController.(loadData () -&gt; ()).(closure #1).(closure #1)"
+                  moduleName = "StarWars"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/infracwi/Documents/Regis/git/treinamento-ios/aula6/Exercicio%20StarWars/StarWars/StarWars/SearchViewController.swift"
+                  timestampString = "521483122.875056"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
