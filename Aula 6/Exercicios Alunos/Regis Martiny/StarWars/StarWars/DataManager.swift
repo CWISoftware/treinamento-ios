@@ -24,7 +24,7 @@ class DataManager {
                 i = i + 1
             }
         }
-        print("Creates: \(i)")
+        print("People created: \(i)")
         completion(0)
         
     }
@@ -39,7 +39,11 @@ class DataManager {
         print("Total people in base: \(peopleLocal.count)")
             
         for personLocal in peopleLocal {
-            let person = Person(image: personLocal.image, name: personLocal.name!, height: personLocal.height!, mass: personLocal.mass!, hairColor: personLocal.hairColor!)
+            var uiimage = UIImage()
+            if (personLocal.image != nil) {
+                uiimage = UIImage(data:personLocal.image! as Data,scale:1.0)!
+            }
+            let person = Person(image: uiimage, name: personLocal.name!, height: personLocal.height!, mass: personLocal.mass!, hairColor: personLocal.hairColor!)
             people.append(person)
             print("Person fetched: ")
             print(personLocal)
@@ -47,6 +51,7 @@ class DataManager {
         
         completion(people, 0)
     }
+    
     
     class func deleteAll() {
         

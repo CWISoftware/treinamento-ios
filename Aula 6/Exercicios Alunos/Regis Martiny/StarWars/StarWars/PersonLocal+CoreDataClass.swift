@@ -72,8 +72,8 @@ public class PersonLocal: NSManagedObject {
     class func delete(id: NSManagedObjectID){
         if let PersonLocalToDelete = getById(id: id){
             context.delete(PersonLocalToDelete)
+            self.save()
         }
-        self.save()
     }
     
     class func save() {

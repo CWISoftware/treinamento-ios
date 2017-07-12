@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Starship : Item {
     var passengers: String
@@ -14,13 +15,22 @@ class Starship : Item {
     var hdRating: String
     
     init(json: JSON) {
-        let image = ""
+        let image = UIImage()
         let name = json["name"] as! String
         self.passengers = json["passengers"] as! String
         self.crew = json["crew"] as! String
         self.hdRating = json["hyperdrive_rating"] as! String
         
         super.init(image: image, name: name, leftPropertyName: "PASSENGERS", leftPropertyValue: self.passengers, centerPropertyName: "CREW", centerPropertyValue: self.crew, rightPropertyName: "HD RATING", rightPropertyValue: self.hdRating)
+    }
+    
+    init(image: UIImage, name: String, passengers: String, crew: String, hdRating: String) {
+        self.passengers = passengers
+        self.crew = crew
+        self.hdRating = hdRating
+        
+        super.init(image: image, name: name, leftPropertyName: "PASSENGERS", leftPropertyValue: self.passengers, centerPropertyName: "CREW", centerPropertyValue: self.crew, rightPropertyName: "HD RATING", rightPropertyValue: self.hdRating)
+        
     }
     
     static func getStarship(_ id: Int, completion: @escaping (_ starship: Starship?, _ error: Int) -> Void) {

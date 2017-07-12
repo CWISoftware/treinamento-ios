@@ -7,11 +7,12 @@
 //
 
 import Foundation
+import UIKit
 
 class Item {
     
     var name = String()
-    var image = String()
+    var image = UIImage()
     var leftPropertyName = String()
     var centerPropertyName = String()
     var rightPropertyName = String()
@@ -23,7 +24,7 @@ class Item {
         
     }
     
-    init(image: String, name: String, leftPropertyName: String, leftPropertyValue: String, centerPropertyName: String, centerPropertyValue: String, rightPropertyName: String, rightPropertyValue: String) {
+    init(image: UIImage, name: String, leftPropertyName: String, leftPropertyValue: String, centerPropertyName: String, centerPropertyValue: String, rightPropertyName: String, rightPropertyValue: String) {
         self.image = image
         self.name = name
         self.leftPropertyName = leftPropertyName
