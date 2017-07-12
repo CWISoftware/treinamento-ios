@@ -14,3 +14,4 @@ Exemplos de código do Treinamento iOS
 5. [Aula 08/07](https://gist.github.com/jnardon/97924e13d8aef56061802a19b7b2f929)
 6. [Aula 11/07](https://gist.github.com/jnardon/86060bf24dfe980db98666b653589f19)
 7. [Aula 12/07](https://gist.github.com/jnardon/6827fcae42649651712794ed08883e11)
+8. [Aula 13/07](https://gist.github.com/jnardon/9d3da5ced1a2ff60929e8463a2f97d5c)
