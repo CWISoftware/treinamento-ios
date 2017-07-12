@@ -35,11 +35,44 @@ class SearchViewController : UIViewController, UITableViewDataSource, UITableVie
         
         
         switch sender! {
-        case "Person":
+        case "Persons":
             Person.getAll() { (person, error) in
                 if let response = person {
                     if error == 0 {
                         self.list  = response as [Person]
+                        self.resultsUITableView.reloadData()
+                        self.loadingUIActivityIndicatorView.stopAnimating()
+                        self.viewLoading.isHidden = true
+                    }
+                }
+            }
+        case "Starships":
+            Starship.getAll() { (starship, error) in
+                if let response = starship {
+                    if error == 0 {
+                        self.list  = response as [Starship]
+                        self.resultsUITableView.reloadData()
+                        self.loadingUIActivityIndicatorView.stopAnimating()
+                        self.viewLoading.isHidden = true
+                    }
+                }
+            }
+        case "Films":
+            Film.getAll() { (film, error) in
+                if let response = film {
+                    if error == 0 {
+                        self.list  = response as [Film]
+                        self.resultsUITableView.reloadData()
+                        self.loadingUIActivityIndicatorView.stopAnimating()
+                        self.viewLoading.isHidden = true
+                    }
+                }
+            }
+        case "Planets":
+            Planet.getAll() { (planet, error) in
+                if let response = planet {
+                    if error == 0 {
+                        self.list  = response as [Planet]
                         self.resultsUITableView.reloadData()
                         self.loadingUIActivityIndicatorView.stopAnimating()
                         self.viewLoading.isHidden = true
@@ -74,8 +107,20 @@ class SearchViewController : UIViewController, UITableViewDataSource, UITableVie
         let index = indexPath.item
         
         switch sender! {
-        case "Person":
+        case "Persons":
             let item = list[index] as! Person
+            searchItemCell.config(label: item.name)
+            
+        case "Starships":
+            let item = list[index] as! Starship
+            searchItemCell.config(label: item.name)
+            
+        case "Films":
+            let item = list[index] as! Film
+            searchItemCell.config(label: item.title)
+            
+        case "Planets":
+            let item = list[index] as! Planet
             searchItemCell.config(label: item.name)
         default: break
             

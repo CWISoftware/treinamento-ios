@@ -10,9 +10,25 @@ import UIKit
 
 class MenuViewController: UIViewController {
 
-    @IBAction func onTouchCategory(_ sender: UIButton) {
+    @IBAction func touchPersons(_ sender: UIButton) {
+        onTouchCategory(sender: "Persons")
+
+    }
+    @IBAction func touchStarships(_ sender: UIButton) {
+        onTouchCategory(sender: "Starships")
+
+    }
+    @IBAction func touchFilms(_ sender: UIButton) {
+        onTouchCategory(sender: "Films")
+
+    }
+    @IBAction func touchPlanets(_ sender: UIButton) {
+        onTouchCategory(sender: "Planets")
+    }
     
-        let searchViewController = SearchViewController.initializeViewController(stringPassed: "Person", storyboard: self.storyboard!)
+    func onTouchCategory(sender: String) {
+    
+        let searchViewController = SearchViewController.initializeViewController(stringPassed: sender,storyboard: self.storyboard!)
         self.navigationController?.pushViewController(searchViewController, animated: true)
     }
 }
