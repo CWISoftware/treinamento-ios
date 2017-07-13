@@ -22,13 +22,6 @@ struct Person {
         self.hairColor = json["hair_color"] as! String
     }
     
-    init(name: String, height: String, mass: String, hairColor: String){
-        self.name = name
-        self.height = height
-        self.mass = mass
-        self.hairColor = hairColor
-    }
-    
     static func getAll(completion: @escaping (_ person: [Person]?, _ error: Int) -> Void) {
         Network.load(url: "people/") { (json, error) in
             if error == 0 {

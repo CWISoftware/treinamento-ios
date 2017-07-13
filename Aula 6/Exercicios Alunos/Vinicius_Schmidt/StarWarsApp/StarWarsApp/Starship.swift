@@ -21,6 +21,13 @@ struct Starship {
         self.hyperdriveRating = json["hyperdrive_rating"] as! String
     }
     
+    init() {
+        self.name = ""
+        self.passengers = ""
+        self.crew = ""
+        self.hyperdriveRating = ""
+    }
+    
     //não funciona request por ID
     static func getStarship(_ id: Int, completion: @escaping (_ starship: Starship?, _ error: Int) -> Void) {
         Network.load(url: "starships/\(id)") { (json, error) in

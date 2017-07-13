@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Planet : Item {
     var rotationPeriod: String
@@ -14,7 +15,7 @@ class Planet : Item {
     var surfaceWater: String
     
     init(json: JSON) {
-        let image = ""
+        let image = UIImage()
         let name = json["name"] as! String
         self.rotationPeriod = json["rotation_period"] as! String
         self.diameter = json["diameter"] as! String
@@ -22,6 +23,16 @@ class Planet : Item {
         
         super.init(image: image, name: name, leftPropertyName: "ROTATION PERIOD", leftPropertyValue: self.rotationPeriod, centerPropertyName: "DIAMETER", centerPropertyValue: self.diameter, rightPropertyName: "SURFACE WATER", rightPropertyValue: self.surfaceWater)
     }
+    
+    init(image: UIImage, name: String, rotationPeriod: String, diameter: String, surfaceWater: String) {
+        self.rotationPeriod = rotationPeriod
+        self.diameter = diameter
+        self.surfaceWater = surfaceWater
+        
+        super.init(image: image, name: name, leftPropertyName: "PASSENGERS", leftPropertyValue: self.rotationPeriod, centerPropertyName: "CREW", centerPropertyValue: self.diameter, rightPropertyName: "HD RATING", rightPropertyValue: self.surfaceWater)
+        
+    }
+
     
     static func getPlanet(_ id: Int, completion: @escaping (_ planet: Planet?, _ error: Int) -> Void) {
         Network.load(url: "planets/\(id)") { (json, error) in

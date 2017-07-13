@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Person : Item {
     var height = String()
@@ -14,13 +15,22 @@ class Person : Item {
     var hairColor = String()
     
     init(json: JSON) {
-        let image = ""
         let name = json["name"] as! String
         self.height = json["height"] as! String
         self.mass = json["mass"] as! String
         self.hairColor = json["hair_color"] as! String
         
+        super.init(image: UIImage(), name: name, leftPropertyName: "HEIGHT", leftPropertyValue: self.height, centerPropertyName: "MASS", centerPropertyValue: self.mass, rightPropertyName: "HAIR COLOR", rightPropertyValue: self.hairColor)
+    }
+    
+    init(image: UIImage, name: String, height: String, mass: String, hairColor: String) {
+        self.height = height
+        self.mass = mass
+        self.hairColor = hairColor
+        
+        
         super.init(image: image, name: name, leftPropertyName: "HEIGHT", leftPropertyValue: self.height, centerPropertyName: "MASS", centerPropertyValue: self.mass, rightPropertyName: "HAIR COLOR", rightPropertyValue: self.hairColor)
+
     }
     
     static func getPerson(_ id: Int, completion: @escaping (_ person: Person?, _ error: Int) -> Void) {

@@ -15,13 +15,29 @@ struct Planet {
     var diameter: String
     var surfaceWater: String
     
-    init(json: JSON) {
+    init?(json: JSON) {
         self.name = json["name"] as! String
         self.rotationPeriod = json["rotation_period"] as! String
         self.diameter = json["diameter"] as! String
         self.surfaceWater = json["surface_water"] as! String
     }
     
+    
+    static func getAll(completion: @escaping (_ planet: [Planet]?, _ error: Int) -> Void) {
+        Network.load(url: "planets/") { (json, error) in
+            if error == 0 {
+                var planets: [Planet] = []
+                for case let result in json["results"] as! [JSON] {
+                    if let planet = Planet(json: result) {
+                        planets.append(planet)
+                    }
+                }
+                completion(planets, error)
+            } else {
+                completion(nil, error)
+            }
+        }
+    }
     
     static func getPlanet(_ id: Int, completion: @escaping (_ person: Planet?, _ error: Int) -> Void) {
         Network.load(url: "planets/\(id)") { (json, error) in

@@ -39,7 +39,7 @@ class DetailViewController : UIViewController {
 
         
         switch sender {
-        case "Person":
+        case "Persons":
             let person = detailContent as! Person
             titleLabel.text = person.name
             subtitle1Label.text = person.height
@@ -48,6 +48,33 @@ class DetailViewController : UIViewController {
             subtitle2Desc.text = "MASS"
             subtitle3Label.text = person.hairColor
             subtitle3Desc.text = "HAIR COLOR"
+        case "Starships":
+            let starship = detailContent as! Starship
+            titleLabel.text = starship.name
+            subtitle1Label.text = starship.passengers
+            subtitle1Desc.text = "PASSENGERS"
+            subtitle2Label.text = starship.crew
+            subtitle2Desc.text = "CREW"
+            subtitle3Label.text = starship.hdRating
+            subtitle3Desc.text = "HD RATING"
+        case "Films":
+            let film = detailContent as! Film
+            titleLabel.text = film.title
+            subtitle1Label.text = film.episode
+            subtitle1Desc.text = "EPISODE"
+            subtitle2Label.text = film.releaseYear
+            subtitle2Desc.text = "RELEASE YEAR"
+            subtitle3Label.text = film.director
+            subtitle3Desc.text = "DIRECTOR"
+        case "Planets":
+            let planets = detailContent as! Planet
+            titleLabel.text = planets.name
+            subtitle1Label.text = planets.rotationPeriod
+            subtitle1Desc.text = "ROTATION PERIOD"
+            subtitle2Label.text = planets.diameter
+            subtitle2Desc.text = "DIAMETER"
+            subtitle3Label.text = planets.surfaceWater
+            subtitle3Desc.text = "SURFACE WATER"
         default:
             break
         }

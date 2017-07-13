@@ -15,13 +15,29 @@ struct Film {
     var releaseYear: String
     var director: String
     
-    init(json: JSON) {
+    init?(json: JSON) {
         self.title = json["title"] as! String
-        self.episode = json["episode_id"] as! String
+        self.episode = String(json["episode_id"] as! Int)
         self.releaseYear = json["release_date"] as! String
         self.director = json["director"] as! String
     }
     
+    
+    static func getAll(completion: @escaping (_ film: [Film]?, _ error: Int) -> Void) {
+        Network.load(url: "films/") { (json, error) in
+            if error == 0 {
+                var films: [Film] = []
+                for case let result in json["results"] as! [JSON] {
+                    if let film = Film(json: result) {
+                        films.append(film)
+                    }
+                }
+                completion(films, error)
+            } else {
+                completion(nil, error)
+            }
+        }
+    }
     
     static func getFilm(_ id: Int, completion: @escaping (_ person: Film?, _ error: Int) -> Void) {
         Network.load(url: "films/\(id)") { (json, error) in

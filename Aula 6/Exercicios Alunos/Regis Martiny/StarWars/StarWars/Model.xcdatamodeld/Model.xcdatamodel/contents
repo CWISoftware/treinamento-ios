@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16D30" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="FilmLocal" representedClassName=".FilmLocal" syncable="YES">
+        <attribute name="director" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="episode" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="releaseDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="PersonLocal" representedClassName=".PersonLocal" syncable="YES">
+        <attribute name="hairColor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="height" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="mass" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="PlanetLocal" representedClassName=".PlanetLocal" syncable="YES">
+        <attribute name="diameter" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rotationPeriod" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="surfaceWater" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="StarshipLocal" representedClassName=".StarshipLocal" syncable="YES">
+        <attribute name="crew" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hdRating" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="passengers" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="FilmLocal" positionX="-36" positionY="63" width="128" height="120"/>
+        <element name="PersonLocal" positionX="-63" positionY="-18" width="128" height="120"/>
+        <element name="PlanetLocal" positionX="-18" positionY="90" width="128" height="120"/>
+        <element name="StarshipLocal" positionX="-54" positionY="27" width="128" height="120"/>
+    </elements>
+</model>

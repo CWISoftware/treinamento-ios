@@ -7,15 +7,17 @@
 //
 
 import Foundation
+import UIKit
 
 class Film : Item {
+    var title: String
     var episode: Int
     var releaseDate: String
     var director: String
     
     init(json: JSON) {
-        let image = ""
-        let title = json["title"] as! String
+        let image = UIImage()
+        self.title = json["title"] as! String
         self.episode = json["episode_id"] as! Int
         self.releaseDate = json["release_date"] as! String
         self.director = json["director"] as! String
@@ -23,7 +25,17 @@ class Film : Item {
         let index = self.releaseDate.index(self.releaseDate.startIndex, offsetBy: 4)
         let releaseYear = self.releaseDate.substring(to: index)
         
-        super.init(image: image, name: title, leftPropertyName: "EPISODE", leftPropertyValue: String(self.episode), centerPropertyName: "RELEASE YEAR", centerPropertyValue: releaseYear, rightPropertyName: "DIRECTOR", rightPropertyValue: self.director)
+        super.init(image: image, name: self.title, leftPropertyName: "EPISODE", leftPropertyValue: String(self.episode), centerPropertyName: "RELEASE YEAR", centerPropertyValue: releaseYear, rightPropertyName: "DIRECTOR", rightPropertyValue: self.director)
+    }
+    
+    init(image: UIImage, title: String, episode: Int, releaseDate: String, director: String) {
+        self.title = title
+        self.episode = episode
+        self.releaseDate = releaseDate
+        self.director = director
+        
+        super.init(image: image, name: self.title, leftPropertyName: "PASSENGERS", leftPropertyValue: String(self.episode), centerPropertyName: "CREW", centerPropertyValue: self.releaseDate, rightPropertyName: "HD RATING", rightPropertyValue: self.director)
+        
     }
     
     static func getFilm(_ id: Int, completion: @escaping (_ film: Film?, _ error: Int) -> Void) {
